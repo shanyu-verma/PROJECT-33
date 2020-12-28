@@ -82,8 +82,8 @@ function draw() {
     }
     else{
       textSize(70);
-      fill("white");
-      stroke("white");
+      fill("cyan");
+      
 
       if(frameCount % 5 === 0){
         part.push(new Sprinkle(random(10,800),10,10));
@@ -92,8 +92,8 @@ function draw() {
       for(var e = 0;e < part.length; e++){
         part[e].display();
       }
-      
-      text("GameOver", 150, 440);
+
+      text("'GAME OVER'", 160, 460);
     }
 
   }
